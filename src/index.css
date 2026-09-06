@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: #e2e8f0;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #0f172a;
+    background-color: #f8fafc;
+    overflow-x: hidden;
+  }
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Minimalist refined scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Clean Minimalism Card & Surface Classes */
+.ocean-glass,
+.ocean-glass-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+}
+
+.ocean-glass-interactive {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.15s ease-in-out;
+}
+
+.ocean-glass-interactive:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.ocean-glow-teal,
+.ocean-glow-cyan {
+  box-shadow: 0 4px 14px -2px rgba(15, 23, 42, 0.08);
+}
+
+/* Subtle clean ambient shimmer */
+@keyframes underwater-shimmer {
+  0%, 100% {
+    opacity: 0.25;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0.45;
+    transform: translateY(-4px);
+  }
+}
+
+.animate-shimmer {
+  animation: underwater-shimmer 10s ease-in-out infinite;
+}
+
+

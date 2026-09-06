@@ -1,0 +1,6 @@
+{
+  "name": "Buddy - Ocean AI Companion",
+  "description": "A calm, intelligent AI companion with deep-ocean atmosphere, hybrid dashboard, explicit memory, analytics, and ocean progression.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
